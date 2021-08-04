@@ -11,7 +11,7 @@ def step_1(username, password, telephone, sex, address):
 
 
 @allure.severity(allure.severity_level.NORMAL)
-@allure.epic("针对单个接口的测试")
+@allure.epic("针对单个接口的测试")#@allure.epic：敏捷里面的概念，定义史诗，往下是 feature
 @allure.feature("用户注册模块")
 class TestUserRegister():
     """用户注册"""

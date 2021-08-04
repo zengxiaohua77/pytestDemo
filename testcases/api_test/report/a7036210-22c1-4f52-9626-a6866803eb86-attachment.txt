@@ -1,0 +1,17 @@
+[2021-08-04 18:07:21,674][test_kuai_login.py 27][INFO]: *************** 开始执行用例 ***************
+[2021-08-04 18:07:21,674][rest_client.py 51][INFO]: 接口请求地址 ==>> http://quick-pay-qa.piaodian.net/api/user/login
+[2021-08-04 18:07:21,674][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2021-08-04 18:07:21,674][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json;charset=UTF-8"
+}
+[2021-08-04 18:07:21,674][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2021-08-04 18:07:21,674][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2021-08-04 18:07:21,674][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "phone": "13800138000",
+    "verificationCode": "111111"
+}
+[2021-08-04 18:07:21,674][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2021-08-04 18:07:21,674][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2021-08-04 18:07:21,751][user_kuai.py 30][INFO]: 登录用户 ==>> 返回结果 ==>> {"code":200,"msg":"success","data":{"token":"eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIyODk4YzY0OTIwNGU0ZjBlODkzN2FlODNkMjE5NWIxYyIsInN1YiI6IuWwj-iKseW5s-WPsCIsInVzZXJJZCI6MTMsImlhdCI6MTYyODA3MTY0MX0.PZHKV6B6QAHi4N0a0aJ1owYImToE8ee3lf6JyGNmdR4","loginUser":{"id":13,"userName":"小花平台","phone":"13800138000","companyId":6,"companyName":"广州杏隆贸易有限公司","companyRoleType":2,"userRoleType":3}},"traceId":"ca8cca666a094faaaed6d39f3d8684f6"}
+[2021-08-04 18:07:21,751][test_kuai_login.py 10][INFO]: 步骤1 ==>> 登录用户：13800138000
+[2021-08-04 18:07:21,752][test_kuai_login.py 34][INFO]: code ==>> 期望结果：0， 实际结果：【 200 】
