@@ -1,0 +1,9 @@
+
+test_user_register_login_update_success:
+  login:
+    username: "小花平台"
+    verificationCode: "123456"
+    phone: "13800138000"
+  except_result: True
+  except_code: 200
+  except_msg: "success"

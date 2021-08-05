@@ -23,6 +23,7 @@ base_data = get_data("base_data.yml")
 api_data = get_data("api_test_data.yml")
 scenario_data = get_data("scenario_test_data.yml")
 api_kuai_data = get_data("api_kuai_data.yml")
+scenario_kuai_data = get_data("scenario_kuai_data.yml")
 
 
 @allure.step("前置步骤 ==>> 清理数据")

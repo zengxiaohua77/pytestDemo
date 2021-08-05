@@ -29,3 +29,26 @@ def login_user(phone, verificationCode):
     result.response = res
     logger.info("登录用户 ==>> 返回结果 ==>> {}".format(result.response.text))
     return result
+
+
+def get_one_user_info(token):
+    """
+    获取单个用户信息
+    :param username:  用户名
+    :return: 自定义的关键字返回结果 result
+    """
+    result = ResultBase()
+    header = {
+        "Content-Type": "application/json;charset=UTF-8",
+        "accessToken": token
+    }
+    res = user.list_one_user(headers=header)
+    result.success = False
+    if res.json()["code"] == 200:
+        result.success = True
+    else:
+        result.error = "查询用户 ==>> 接口返回码是 【 {} 】, 返回信息：{} ".format(res.json()["code"], res.json()["msg"])
+    result.msg = res.json()["msg"]
+    result.response = res
+    logger.info("查看单个用户 ==>> 返回结果 ==>> {}".format(result.response.text))
+    return result

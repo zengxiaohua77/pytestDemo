@@ -1,0 +1,288 @@
+[2021-08-05 16:08:51,750][test_kuai_login.py 27][INFO]: *************** 开始执行用例 ***************
+[2021-08-05 16:08:51,750][rest_client.py 51][INFO]: 接口请求地址 ==>> http://quick-pay-qa.piaodian.net/api/user/login
+[2021-08-05 16:08:51,751][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2021-08-05 16:08:51,751][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json;charset=UTF-8"
+}
+[2021-08-05 16:08:51,751][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2021-08-05 16:08:51,751][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2021-08-05 16:08:51,751][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "phone": "13200138000",
+    "verificationCode": "123456"
+}
+[2021-08-05 16:08:51,751][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2021-08-05 16:08:51,751][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2021-08-05 16:08:51,798][user_kuai.py 30][INFO]: 登录用户 ==>> 返回结果 ==>> {"code":1007,"msg":"用户不存在","data":null,"traceId":"0fb4700178444915a0c8ecc6fa66d96e"}
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/logging/__init__.py", line 1081, in emit
+    msg = self.format(record)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/logging/__init__.py", line 925, in format
+    return fmt.format(record)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/logging/__init__.py", line 664, in format
+    record.message = record.getMessage()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/logging/__init__.py", line 369, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/Applications/PyCharm.app/Contents/helpers/pycharm/_jb_pytest_runner.py", line 42, in <module>
+    pytest.main(args, plugins_to_load + [Plugin])
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/config/__init__.py", line 79, in main
+    return config.hook.pytest_cmdline_main(config=config)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/manager.py", line 84, in <lambda>
+    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/main.py", line 242, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/main.py", line 205, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/main.py", line 249, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/manager.py", line 84, in <lambda>
+    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/main.py", line 270, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/manager.py", line 84, in <lambda>
+    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/runner.py", line 77, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/runner.py", line 92, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/runner.py", line 172, in call_and_report
+    call = call_runtest_hook(item, when, **kwds)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/runner.py", line 196, in call_runtest_hook
+    return CallInfo.from_call(
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/runner.py", line 225, in from_call
+    result = func()
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/runner.py", line 197, in <lambda>
+    lambda: ihook(item=item, **kwds), when=when, reraise=reraise
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/manager.py", line 84, in <lambda>
+    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/runner.py", line 122, in pytest_runtest_call
+    item.runtest()
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/python.py", line 1467, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/manager.py", line 84, in <lambda>
+    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/python.py", line 179, in pytest_pyfunc_call
+    testfunction(**testargs)
+  File "/Volumes/data/ui/pytestDemo/testcases/api_test/test_kuai_login.py", line 29, in test_login_user
+    logger.info("result:",result.response.text)
+Message: 'result:'
+Arguments: ('{"code":1007,"msg":"用户不存在","data":null,"traceId":"0fb4700178444915a0c8ecc6fa66d96e"}',)
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/logging/__init__.py", line 1081, in emit
+    msg = self.format(record)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/logging/__init__.py", line 925, in format
+    return fmt.format(record)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/logging/__init__.py", line 664, in format
+    record.message = record.getMessage()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/logging/__init__.py", line 369, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/Applications/PyCharm.app/Contents/helpers/pycharm/_jb_pytest_runner.py", line 42, in <module>
+    pytest.main(args, plugins_to_load + [Plugin])
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/config/__init__.py", line 79, in main
+    return config.hook.pytest_cmdline_main(config=config)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/manager.py", line 84, in <lambda>
+    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/main.py", line 242, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/main.py", line 205, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/main.py", line 249, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/manager.py", line 84, in <lambda>
+    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/main.py", line 270, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/manager.py", line 84, in <lambda>
+    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/runner.py", line 77, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/runner.py", line 92, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/runner.py", line 172, in call_and_report
+    call = call_runtest_hook(item, when, **kwds)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/runner.py", line 196, in call_runtest_hook
+    return CallInfo.from_call(
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/runner.py", line 225, in from_call
+    result = func()
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/runner.py", line 197, in <lambda>
+    lambda: ihook(item=item, **kwds), when=when, reraise=reraise
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/manager.py", line 84, in <lambda>
+    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/runner.py", line 122, in pytest_runtest_call
+    item.runtest()
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/python.py", line 1467, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/manager.py", line 84, in <lambda>
+    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/python.py", line 179, in pytest_pyfunc_call
+    testfunction(**testargs)
+  File "/Volumes/data/ui/pytestDemo/testcases/api_test/test_kuai_login.py", line 29, in test_login_user
+    logger.info("result:",result.response.text)
+Message: 'result:'
+Arguments: ('{"code":1007,"msg":"用户不存在","data":null,"traceId":"0fb4700178444915a0c8ecc6fa66d96e"}',)
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/logging/__init__.py", line 1081, in emit
+    msg = self.format(record)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/logging/__init__.py", line 925, in format
+    return fmt.format(record)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/logging/__init__.py", line 664, in format
+    record.message = record.getMessage()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/logging/__init__.py", line 369, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/Applications/PyCharm.app/Contents/helpers/pycharm/_jb_pytest_runner.py", line 42, in <module>
+    pytest.main(args, plugins_to_load + [Plugin])
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/config/__init__.py", line 79, in main
+    return config.hook.pytest_cmdline_main(config=config)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/manager.py", line 84, in <lambda>
+    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/main.py", line 242, in pytest_cmdline_main
+    return wrap_session(config, _main)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/main.py", line 205, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/main.py", line 249, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/manager.py", line 84, in <lambda>
+    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/main.py", line 270, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/manager.py", line 84, in <lambda>
+    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/runner.py", line 77, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/runner.py", line 92, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/runner.py", line 172, in call_and_report
+    call = call_runtest_hook(item, when, **kwds)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/runner.py", line 196, in call_runtest_hook
+    return CallInfo.from_call(
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/runner.py", line 225, in from_call
+    result = func()
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/runner.py", line 197, in <lambda>
+    lambda: ihook(item=item, **kwds), when=when, reraise=reraise
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/manager.py", line 84, in <lambda>
+    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/runner.py", line 122, in pytest_runtest_call
+    item.runtest()
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/python.py", line 1467, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/manager.py", line 84, in <lambda>
+    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/pluggy/callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/python.py", line 179, in pytest_pyfunc_call
+    testfunction(**testargs)
+  File "/Volumes/data/ui/pytestDemo/testcases/api_test/test_kuai_login.py", line 29, in test_login_user
+    logger.info("result:",result.response.text)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/logging/__init__.py", line 1434, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/logging/__init__.py", line 1577, in _log
+    self.handle(record)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/logging/__init__.py", line 1587, in handle
+    self.callHandlers(record)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/logging/__init__.py", line 1649, in callHandlers
+    hdlr.handle(record)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/logging/__init__.py", line 950, in handle
+    self.emit(record)
+  File "/Volumes/data/djangoprj/venv/lib/python3.8/site-packages/_pytest/logging.py", line 206, in emit
+    logging.StreamHandler.emit(self, record)
+Message: 'result:'
+Arguments: ('{"code":1007,"msg":"用户不存在","data":null,"traceId":"0fb4700178444915a0c8ecc6fa66d96e"}',)
+[2021-08-05 16:08:51,799][test_kuai_login.py 10][INFO]: 步骤1 ==>> 登录用户：13200138000
+[2021-08-05 16:08:51,800][test_kuai_login.py 34][INFO]: code ==>> 期望结果：1007， 实际结果：【 1007 】
+[2021-08-05 16:08:51,800][test_kuai_login.py 37][INFO]: *************** 结束执行用例 ***************

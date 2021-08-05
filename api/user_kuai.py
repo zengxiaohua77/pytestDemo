@@ -12,12 +12,12 @@ class User(RestClient):
     def __init__(self, api_root_url, **kwargs):
         super(User, self).__init__(api_kuai_url, **kwargs)
 
-    # def list_all_users(self, **kwargs):
-    #     return self.get("/users", **kwargs)
-    #
-    # def list_one_user(self, username, **kwargs):
-    #     return self.get("/users/{}".format(username), **kwargs)
-    #
+    def list_all_users(self, **kwargs):
+        return self.get("/user/getLoginUserInfo", **kwargs)
+
+    def list_one_user(self, **kwargs):
+        return self.get("/user/getLoginUserInfo", **kwargs)
+
     # def register(self, **kwargs):
     #     return self.post("/register", **kwargs)
 
